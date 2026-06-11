@@ -9,7 +9,7 @@
         <property name="make" value="BMW"/>
         <property name="model" value="2026"/>
     </bean>
-    <bean id="mycar" class="car.example.constructor.injection.Car">
+    <bean id="mycaar" class="car.example.constructor.injection.Car">
         <constructor-arg ref="CarSpecification"/>
     </bean>
 </beans>
