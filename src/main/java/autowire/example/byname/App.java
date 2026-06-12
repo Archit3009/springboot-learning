@@ -1,4 +1,4 @@
-package autowire.example;
+package autowire.example.byname;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
