@@ -1,0 +1,20 @@
+package autowire.example.byconstructor;
+
+public class Car {
+    private Specification specification;
+
+    public Car(Specification specification)
+    {
+        this.specification = specification;
+    }
+
+
+    public void setSpecification(Specification specification)
+    {
+        this.specification = specification;
+    }
+
+    public void displaydetails(){
+        System.out.println("car details : " + specification.toString());
+    }
+}
