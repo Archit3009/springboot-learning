@@ -1,12 +1,17 @@
 package com.example.componentscan;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
-@Component
-public class Employee {
-  private int empid;
-  private String firstname;
+@Component("employee")
+public class Employee{
+   @Value("695")
+    private int empid;
+  @Value("Archit")
+   private String firstname;
+  @Value("${java.home}") // we have been adding a property here instead of writing the value ourselves
   private String lastname;
+  @Value("#{200000*12}") // inserting an expression here and the final answer will be stored
   private double salary;
 
     public double getSalary() {
